@@ -1,0 +1,39 @@
+.btn {
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  color: var(--white);
+  font-family: var(--font-regular);
+}
+.btn-primary {
+  border: 2px solid var(--secondary_clr);
+  padding: 12px 25px;
+  border-radius: 27px;
+  background: var(--btn_bg-clr);
+  transition: color 0.4s linear;
+  text-transform: uppercase;
+}
+.btn-secondary {
+  border: 2px solid var(--secondary_clr);
+  padding: 12px 25px;
+  border-radius: 0.5rem;
+  background: var(--btn_bg-clr);
+  transition: color 0.4s linear;
+  @media (max-width: 768px) {
+    padding: 12px 10px;
+  }
+}
+.btn-notifi {
+  border-radius: 5px;
+  border: 1px solid var(--primary-);
+  padding: 8px 14px;
+  color: var(--primary-);
+  background-color: var(--white);
+}
+.btn-premium {
+  padding: 12px 54px 11px 54px;
+  border-radius: 5px;
+  background: var(--primary-);
+  color: var(--white);
+}

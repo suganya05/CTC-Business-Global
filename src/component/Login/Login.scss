@@ -1,0 +1,100 @@
+.login-wrapper {
+  position: relative;
+  min-height: 100vh;
+  @media (max-width: 768px) {
+    margin: 0 80px;
+  }
+  @media (max-width: 568px) {
+    margin: 0 15px;
+  }
+  .login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--faq_bg_clr);
+    border: 1px solid var(--login-border-clr);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 440px;
+    height: 100%;
+    .close-icon {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      svg {
+        cursor: pointer;
+      }
+    }
+    .logo {
+      justify-content: center;
+      img {
+        width: 300px;
+        height: 115px;
+        object-fit: contain;
+      }
+    }
+    .tab-login {
+      justify-content: space-around;
+      border-radius: 16px;
+      padding: 5px;
+      border: 1px solid var(--secondary_clr);
+      width: 80%;
+      margin: 24px auto;
+      flex-wrap: initial;
+      background: rgb(0 0 0 / 20%);
+
+      .nav-link {
+        padding: 8px 16px;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+        cursor: pointer;
+        &.active {
+          background: var(--secondary_clr);
+        }
+        p {
+          font-family: var(--font-semiBold);
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+    .connect-wallet-btn {
+      padding: 24px 22px 0;
+      button {
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+    .register-btns {
+      padding: 0 22px;
+      p {
+        margin-bottom: 8px;
+      }
+      .refferal-input {
+        input {
+          background: var(--input_bg_clr);
+          width: 100%;
+          padding: 11px 20px;
+          outline: none;
+          border: 1px solid var(--input-border);
+          border-radius: 27px;
+          font-size: 16px;
+          line-height: 1.5;
+          color: var(--white);
+        }
+      }
+      .register-btn {
+        margin-top: 24px;
+        button {
+          width: 100%;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

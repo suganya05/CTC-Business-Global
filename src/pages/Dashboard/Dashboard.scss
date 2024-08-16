@@ -1,0 +1,118 @@
+.dashboard-wrapper {
+  margin: 110px 32px;
+  @media (max-width: 500px) {
+    margin: 110px 16px;
+  }
+  .dashboard-container {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+
+      .box-color {
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: inset 0 0 20px rgb(0 215 235 / 37%);
+      }
+      .box-width {
+        flex: 0 0 48%;
+        max-width: 48%;
+        @media (max-width: 768px) {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+      .user-id-box {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        .logo {
+          img {
+            max-width: 200px;
+            width: 100%;
+            object-fit: contain;
+            @media (max-width: 500px) {
+              max-width: 150px;
+            }
+          }
+        }
+        .content {
+          h3 {
+            font-size: 28px;
+            line-height: 1.2;
+            margin-bottom: 8px;
+            @media (max-width: 768px) {
+              font-size: 22px;
+            }
+          }
+          h4 {
+            font-size: 20px;
+            line-height: 1.2;
+            margin-top: 8px;
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .personal-link {
+        display: flex;
+        justify-content: space-between;
+        p {
+          opacity: 0.8;
+          font-size: 16px;
+          margin-bottom: 24px;
+        }
+        h5 {
+          color: var(--secondary_clr);
+          font-size: 20px;
+          @media (max-width: 768px) {
+            font-size: 15px;
+          }
+        }
+        .copy-btn {
+          margin-top: 22px;
+          @media (max-width: 768px) {
+            margin-top: 2px;
+          }
+          button {
+            @media (max-width: 768px) {
+              padding: 5px 20px;
+            }
+          }
+        }
+      }
+      .direct {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          opacity: 0.8;
+          font-size: 16px;
+          margin-bottom: 8px;
+          line-height: 1.2;
+        }
+        h4 {
+          font-size: 24px;
+          @media (max-width: 768px) {
+            font-size: 19px;
+          }
+        }
+      }
+      .total-box {
+        flex: 0 0 23%;
+        max-width: 23%;
+        @media (max-width: 768px) {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        h4 {
+          font-size: 24px;
+          @media (max-width: 768px) {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}

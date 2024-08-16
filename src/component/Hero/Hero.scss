@@ -1,0 +1,144 @@
+.hero-wrapper {
+  padding-top: 140px;
+  @media (max-width: 768px) {
+    padding-top: 100px;
+  }
+  .social-media-icons {
+    position: fixed;
+    left: 25px;
+    bottom: 25%;
+    z-index: 1000;
+    @media (max-width: 992px) {
+      display: none;
+    }
+    .icon {
+      display: flex;
+      flex-direction: column;
+      column-gap: 25px;
+      background-image: var(--gradient_clr);
+      border-radius: 50%;
+      padding: 12px;
+      margin-bottom: 25px;
+    }
+  }
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    @media (max-width: 1024px) {
+      padding: 40px 80px;
+    }
+    @media (max-width: 768px) {
+      display: block;
+    }
+    @media (max-width: 568px) {
+      padding: 40px 20px;
+    }
+    .image-resonsive {
+      img {
+        max-width: 700px;
+        width: 100%;
+        object-fit: contain;
+        @media (max-width: 768px) {
+          padding-bottom: 80px;
+        }
+      }
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    .content {
+      flex: 0 0 50%;
+      max-width: 50%;
+      @media (max-width: 768px) {
+        max-width: 100%;
+        margin-top: -50px;
+      }
+      h3 {
+        font-size: 56px;
+        line-height: 1.2;
+        font-family: var(--font-bold);
+        @media (max-width: 768px) {
+          font-size: 25px;
+          text-align: center;
+        }
+      }
+      p {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 15px 0;
+        @media (max-width: 768px) {
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+      .btns {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        @media (max-width: 768px) {
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        button {
+          font-size: 16px;
+          margin-top: 10px;
+        }
+        .btn-responsive {
+          display: flex;
+          gap: 10px;
+          .wallet-address {
+            .wallet-address-input {
+              margin-top: 12px;
+              input {
+                background: var(--btn_bg-clr);
+                border: 2px solid var(--secondary_clr);
+                width: 100%;
+                padding: 12px 10px;
+                outline: none;
+                border-radius: 8px;
+                font-size: 16px;
+                color: var(--white);
+              }
+            }
+          }
+        }
+      }
+    }
+    .image {
+      flex: 0 0 50%;
+      max-width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 768px) {
+        display: none;
+      }
+      img {
+        max-width: 500px;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .top-scrolling {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-image: var(--gradient_clr);
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    .top-scrolling-icon {
+      justify-content: center;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
